@@ -35,19 +35,21 @@
 # =============================================================
 
 import requests
+import os
+import sys
 
 # =============================================================
 # METABASE CONFIG
 # =============================================================
 METABASE_URL     = "https://reporting.daalchini.co.in"
-METABASE_API_KEY = "mb_n7XxPjMWaMOAInZ/kjKuAFvfpDhYKqU6Ws4PCQ4pTmg="      # replace with actual key
+METABASE_API_KEY = os.environ.get("METABASE_API_KEY")      # replace with actual key
 METABASE_CARD_ID = 14926
 WAREHOUSE_COLUMN = "name"
 
 # =============================================================
 # JOTFORM CONFIG
 # =============================================================
-JOTFORM_API_KEY      = "9325af147f76da4e263d7c7725d84654"
+JOTFORM_API_KEY      = os.environ.get("JOTFORM_API_KEY") 
 JOTFORM_FORM_ID      = "251590768630059"
 JOTFORM_QUESTION_IDS = [326, 328]               # both warehouse dropdowns
 
