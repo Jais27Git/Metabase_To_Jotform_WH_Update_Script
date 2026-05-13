@@ -43,4 +43,4 @@ jobs:
         env:
           METABASE_API_KEY: ${{ secrets.METABASE_API_KEY }}
           JOTFORM_API_KEY: ${{ secrets.JOTFORM_API_KEY }}
-        run: python metabase_to_jotform_dropdown.py
+        run: python WH_Update_Script.py
